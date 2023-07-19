@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0 ">
+    <title></title>
+  </head>
+  <body>
+    <div class="myname">
+     <h1 class="intro-2">The name is<br><span class="firstname">Praveen</span><span class="lastname"> Kumar</span></h1>
+   </div>
+   <div class="container">
+     <nav>
+       <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="#">Feedback</a></li>
+
+
+     </ul>
+   </nav>
+ </div>
+
+    <div id="header">
+
+    </div>
+    <!-- about section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1"><img class="aboutpic" src="images/praveen-tajmahal.jpg">
+          </div>
+          <div class="about-col-2"><h1 class="subtitle">About Me</h1>
+            <p>Seeking a beginner level position to enchance and explore my technical knowledge on software development
+             gained by mixture of certifications and self-learning, I hold a Btech degree from Vels university and have worked on few web development self projects.
+           </p>
+           <div class="tab-title">
+             <div class="tab-link" onclick="opentab('Skills')">Skills</div>
+             <div class="tab-link" onclick="opentab('Internships')">Internships</div>
+             <div class="tab-link" onclick="opentab('Education')">Education</div>
+
+           </div>
+           <div class="tab-content active-tab" id="Skills">
+             <ul>
+               <li><span>Programming Languages</span><br>Python<br>PHP</li>
+               <li><span>Web development</span><br>HTML <br>CSS</li>
+                <li><span>Databases</span><br>MySQL</li>
+
+
+             </ul>
+
+           </div>
+          <div class="tab-content" id="Internships">
+            <ul>
+              <li><span>Intern</span><br>April 2022 - June 2022<br>Oil and Natural Gas Corporation,Chennai</li>
+
+            </ul>
+
+          </div>
+          <div class="tab-content" id="Education">
+            <ul>
+              <li><span>Btech Petroleum Engineering</span><br>2018-2022<br>Vels Institute of Science Technology and Advanced Studies,<br>6.5 CGPA</li>
+              <li><span>12th</span><br>2017-2018 <br>St Thomas Group of Schools<br>60.3%</li>
+              <li><span>10th</span><br>2015-2016 <br>St Thomas Group of Schools<br>88.2%</li>
+
+
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+    <!-- -contact section - -->
+    <div id="Contact">
+      <div class="container">
+
+        <div class="row">
+          <div class="contact-details">
+            <h1 class="subtitle">Contact Me</h1>
+            <a href="mailto:praveenkumarpetroleum@gmail.com;">praveenkumarpetroleum@gmail.com</a>
+            <p>+91 9345354875</p>
+            <div class="social-media">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+<script>
+   var tablinks=document.getElementsByClassName('tab-link');
+   var tabcontents=document.getElementsByClassName('tab-content');
+   function opentab(tabname){
+     for(i of tabcontents){
+       i.classList.remove("active-tab");
+     }
+     document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+  </body>
+</html>

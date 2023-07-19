@@ -1,0 +1,142 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+*{
+  margin:50;
+  padding: 50;
+  font-family:  sans-serif;
+  box-sizing: border-box;
+}
+
+.myname{
+  font-size: 30px;
+  padding: 0px;
+  position: absolute;
+  top: 200px;
+  left:200px;
+}
+ h1 .intro-2{
+   font-size: 30px
+ }
+
+h1 span.firstname{
+  color: #ff004f;
+}
+h1 span.lastmame{
+   color: white;
+ }
+
+#header{
+  width: 50%;
+  height:80vh;
+  /*background-image: url(images/rain-on-window-img.jpeg);*/
+  background-image: url(images/praveen-purple-lefthalf.jpg);
+  padding: 40;
+  /*border-radius: 50%;*/
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  margin-top: 30px;
+  margin-left: 50%;
+  background-size: cover;
+  background-position: center;
+}
+/*  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}*/
+
+nav{
+  padding:5px 5%;
+  position: relative;
+  top:1%;
+  left:65%;
+  display: flex;
+  /*margin-left: 40%;*/
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* ----About section ---*/
+
+#about{
+  padding:  80px 0px;
+}
+.about-col-1 img{
+  width:100% ;
+  border-radius: 15px;
+  /*height:60vh ;*/
+}
+.about-col-1{
+  flex-basis: 35%;
+}
+
+.about-col-2{
+  flex-basis: 60%;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.subtitle{
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.tab-title{
+  display: flex;
+  margin: 20px 0px 30px;
+}
+
+.tab-link{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight:500 ;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.tab-content ul li{
+  /*list-style: none;*/
+  margin: 15px 0px;
+
+  font-size: 18px;
+  /*margin-left: 5px 0;*/
+}
+.tab-content ul li span{
+  color: #ff004f;
+  font-size:14px;
+}
+
+.tab-content{
+  display: none;
+}
+.tab-content.active-tab{
+  display: block;
+}
+
+/* contact  */
+.contact-details a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
